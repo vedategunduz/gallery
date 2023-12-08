@@ -1,1 +1,224 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="controller">
+            <button type="button" id="themeModeController">Dark Mode</button>
+            <div class="dropdown">
+                <button type="button" id="languageController" class="dropdown-btn" data-target="languageList">Language
+                    EN</button>
+
+                <ul class="dropdown-list" id="languageList">
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('en')"
+                            type="button">English</button></li>
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('tr')" type="button">Türkçe</button>
+                    </li>
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('de')"
+                            type="button">Deutsche</button></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Deskop Menu -->
+        <nav id="nav" class="nav">
+            <div class="nav-logo">
+                <span>VEDATEGUNDUZ</span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#"><span>Home</span></a></li>
+                <li>
+                    <button type="button" class="open" data-target="carsModal"><span>Cars</span></button>
+                </li>
+                <li><a href="#"><span>About</span></a></li>
+                <li><a href="#"><span>Contact</span></a></li>
+                <li><a href="register.html"><span>Sign Up</span></a></li>
+            </ul>
+            <button type="button" class="open" data-target="navMobile">Menu</button>
+        </nav>
+        <!-- Mobile Menu -->
+        <nav id="navMobile" class="nav-mobile" data-animate-rotation="leftToRight">
+            <header>
+                <div class="nav-mobile-logo">
+                    <span>VEDATEGUNDUZ</span>
+                </div>
+                <button type="button" class="close" data-target="navMobile">Close</button>
+            </header>
+            <footer>
+                <ul class="nav-mobile-list">
+                    <li><a href="#"><span>Home</span></a></li>
+                    <li>
+                        <button type="button" class="open flex-btn" data-target="carsModal">
+                            <span class="text">Cars</span>
+                            <div class="icon">Next</div>
+                        </button>
+                    </li>
+                    <li><a href="#"><span>About</span></a></li>
+                    <li><a href="#"><span>Contact</span></a></li>
+                    <li><a href="register.html"><span>Sign Up</span></a></li>
+                </ul>
+            </footer>
+        </nav>
+        <!-- Cars Menu -->
+        <section id="carsModal" class="modal-wrapper" data-animate-rotation="leftToRight">
+            <div class="modal-head">
+                <span class="logo">VEDATEGUNDUZ</span>
+                <button type="button" class="close" data-target="carsModal">
+                    <span>Close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <section class="grid-box">
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387438399619112/ford_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Ford</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387436092760085/mclaren_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>McLaren</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387436461850624/mitsubishi_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Mitsubishi</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387437216833576/aston_martin_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Aston Martin</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387435635572766/maserati_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Maserati</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387436893880353/porsche_banner.jpg?"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Porsche</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387437627867167/audi_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Audi</span></a>
+                    </div>
+                    <div class="grid-item">
+                        <div class="img-box">
+                            <img src="https://cdn.discordapp.com/attachments/782786159612919879/1175387438038917130/chevrolet_banner.jpg"
+                                alt="">
+                        </div>
+                        <a href="#" class="btn"><span>Chevrolet</span></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <h1>Title 1</h1>
+        <p class="text-justify">
+            lorem
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt earum debitis nobis, eaque ipsum
+            omnis architecto tenetur quod, laudantium illo porro modi commodi quam provident rerum quisquam, dolorem
+            excepturi.
+            Culpa, ipsum totam harum qui molestiae nisi eligendi sed? Impedit tempore ea rem suscipit, tenetur
+            perspiciatis consequatur commodi, iste aliquid nesciunt ex harum numquam esse consectetur, quis alias nisi
+            quisquam.
+            Saepe, consequuntur ex? Architecto vel amet, culpa esse inventore neque error beatae, voluptas dicta
+            mollitia vero molestiae consequuntur quos reprehenderit. Vero, reiciendis vel suscipit necessitatibus
+            voluptas enim ab neque praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, velit vero aut voluptatibus nostrum doloribus,
+            impedit in dolore quidem dicta harum, tenetur cum rerum maxime eveniet officia blanditiis praesentium error.
+        </p>
+        <br>
+        <h2>Title 2</h2>
+        <p class="text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt earum debitis nobis, eaque ipsum
+            omnis architecto tenetur quod, laudantium illo porro modi commodi quam provident rerum quisquam, dolorem
+            excepturi.
+            Culpa, ipsum totam harum qui molestiae nisi eligendi sed? Impedit tempore ea rem suscipit, tenetur
+            perspiciatis consequatur commodi, iste aliquid nesciunt ex harum numquam esse consectetur, quis alias nisi
+            quisquam.
+            Saepe, consequuntur ex? Architecto vel amet, culpa esse inventore neque error beatae, voluptas dicta
+            mollitia vero molestiae consequuntur quos reprehenderit. Vero, reiciendis vel suscipit necessitatibus
+            voluptas enim ab neque praesentium!
+        </p>
+        <br>
+        <h3>Title 3</h3>
+        <p class="text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt earum debitis nobis, eaque ipsum
+            omnis architecto tenetur quod, laudantium illo porro modi commodi quam provident rerum quisquam, dolorem
+            excepturi.
+            Culpa, ipsum totam harum qui molestiae nisi eligendi sed? Impedit tempore ea rem suscipit, tenetur
+            perspiciatis consequatur commodi, iste aliquid nesciunt ex harum numquam esse consectetur, quis alias nisi
+            quisquam.
+            Saepe, consequuntur ex? Architecto vel amet, culpa esse inventore neque error beatae, voluptas dicta
+            mollitia vero molestiae consequuntur quos reprehenderit. Vero, reiciendis vel suscipit necessitatibus
+            voluptas enim ab neque praesentium!
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt earum debitis nobis, eaque ipsum
+            omnis architecto tenetur quod, laudantium illo porro modi commodi quam provident rerum quisquam, dolorem
+            excepturi.
+            Culpa, ipsum totam harum qui molestiae nisi eligendi sed? Impedit tempore ea rem suscipit, tenetur
+            perspiciatis consequatur commodi, iste aliquid nesciunt ex harum numquam esse consectetur, quis alias nisi
+            quisquam.
+            Saepe, consequuntur ex? Architecto vel amet, culpa esse inventore neque error beatae, voluptas dicta
+            mollitia vero molestiae consequuntur quos reprehenderit. Vero, reiciendis vel suscipit necessitatibus
+            voluptas enim ab neque praesentium!
+        </p>
+        <br>
+        <h3>Title 4</h3>
+        <p class="text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat sunt earum debitis nobis, eaque ipsum
+            omnis architecto tenetur quod, laudantium illo porro modi commodi quam provident rerum quisquam, dolorem
+            excepturi.
+            Culpa, ipsum totam harum qui molestiae nisi eligendi sed? Impedit tempore ea rem suscipit, tenetur
+            perspiciatis consequatur commodi, iste aliquid nesciunt ex harum numquam esse consectetur, quis alias nisi
+            quisquam.
+            Saepe, consequuntur ex? Architecto vel amet, culpa esse inventore neque error beatae, voluptas dicta
+            mollitia vero molestiae consequuntur quos reprehenderit. Vero, reiciendis vel suscipit necessitatibus
+            voluptas enim ab neque praesentium!
+        </p>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="created text-center">
+            <span>Created by vedatgunduz</span>
+            <br>
+            <span>&copy; Copyright All Right Reversed. 2023</span>
+        </div>
+    </footer>
+
+    <section id="loader" class="show">
+        <div class="spinner"></div>
+    </section>
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lang.js"></script>
+</body>
+
+</html>

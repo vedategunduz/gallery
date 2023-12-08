@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+// spacing
+$content-padding-top-bottom: 2rem;
+$content-padding-left-right: 10vw;
+$content-padding: $content-padding-top-bottom $content-padding-left-right;
+// ? Colors
+// * Dark Mode Theme Colors
+$dark-mode-body: #333;
+$dark-mode-text-color: #fff;
+// * Light Mode Theme Colors
+$light-mode-body: #fff;
+$light-mode-text-color: #333;
+// * Text Colors
+$colors: (
+    "blue": #0d6efd,
+    "indigo": #6610f2,
+    "purple": #6f42c1,
+    "pink": #d63384,
+    "red": #dc3545,
+    "orange": #fd7e14,
+    "yellow": #ffc107,
+    "green": #198754,
+    "teal": #20c997,
+    "cyan": #0dcaf0,
+    "white": #ffffff,
+    "black": #000000
+);

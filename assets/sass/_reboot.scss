@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button,
+button[type="button"] {
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.hide {
+    display: none;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+@each $key, $value in $colors {
+    .text-#{$key} {
+        color: $value;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+}
+
+$size: 2.5rem;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $size;
+    }
+
+    $size: $size - .25rem;
+}
+
+/*
+    !Dropdown CSS
+*/
+.dropdown {
+    position: relative;
+
+    &-list {
+        min-width: 10rem;
+        z-index: 2;
+        position: absolute;
+        overflow: auto;
+
+        &:not(.show) {
+            display: none;
+        }
+    }
+}

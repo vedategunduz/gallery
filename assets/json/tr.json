@@ -1,0 +1,34 @@
+{
+    "lang": "tr",
+    "title": "Döküman",
+    "theme_mode": {
+        "light": "Açık Tema",
+        "dark": "Koyu Tema"
+    },
+    "language": "Sayfa Dili",
+    "menu": [
+        "Anasayfa",
+        "Arabalar",
+        "Hakkında",
+        "İletşim",
+        "Kayıt Ol"
+    ],
+    "form_els": {
+        "login": {
+            "login": "Giriş Yap",
+            "email": "E-Mail",
+            "password": "Şifre",
+            "remember_me": "Beni hatırla",
+            "forgot_password": "Şifremi unuttum",
+            "not_a_remember_yet": "Henüz üye olmadın mı?"
+        },
+        "sign_up": {
+            "sign_up": "Kayıt Ol",
+            "username": "Ad ve Soyad",
+            "email": "E-Mail",
+            "password": "Şifre",
+            "repeat_password": "Şifre tekrar",
+            "already_a_member?": "Zaten üye misin?"
+        }
+    }
+}

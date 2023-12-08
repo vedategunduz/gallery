@@ -1,0 +1,128 @@
+@media only screen and (max-width: 991.98px) {
+
+    // Phone
+    header {
+        .nav {
+            &-list {
+                display: none !important;
+            }
+        }
+
+        .nav-mobile {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100vw;
+            height: 100vh;
+            padding-top: 41px;
+            background-color: white;
+            transition: .2s;
+
+            &:not(.show) {
+                visibility: hidden;
+            }
+
+            &.show {
+                visibility: visible;
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: $content-padding-top-bottom $content-padding-left-right;
+
+                .nav-mobile-logo {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+
+            footer {
+                padding: $content-padding-top-bottom $content-padding-left-right;
+
+                .nav-mobile-list {
+
+                    li {
+                        border-bottom: 1px solid rgba(black, .1);
+
+                        a,
+                        button {
+                            color: #000;
+                            width: 100%;
+                            padding: 1rem 0;
+                            display: block;
+
+                            &.flex-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+
+                        &:last-child {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal-wrapper {
+            .modal-body {
+                .grid-box {
+                    gap: 1rem;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    // User Action
+    .user-action.container {
+        .user-wrapper {
+            width: 70vw;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    // Large Deskop
+    header {
+        .nav {
+            &-list {
+                li {
+                    &:not(:last-child) {
+                        margin-right: 3rem;
+                    }
+                }
+            }
+
+            &>button {
+                display: none !important;
+            }
+        }
+
+        .nav-mobile {
+            display: none !important;
+        }
+
+        .modal-wrapper {
+            .modal-body {
+                .grid-box {
+                    gap: 1rem;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+
+    // User Action
+    .user-action.container {
+        .user-wrapper {
+            width: 20vw;
+        }
+    }
+}

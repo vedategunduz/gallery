@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .controller {
+            position: fixed;
+            left: 0;
+            width: 80vw;
+            z-index: 3;
+            background-color: transparent;
+            backdrop-filter: blur(.75rem);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        .controller button {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+        Audi
+        https://cdn.discordapp.com/attachments/1175449786565009490/1175851627790471228/audi1.mp4
+        Ford
+        https://cdn.discordapp.com/attachments/1175449786565009490/1175822125806915594/mustang69.mp4
+        McLaren
+        https://cdn.discordapp.com/attachments/1175449786565009490/1176079268883730462/mclaren.mp4
+    -->
+
+    <header>
+        <div class="controller">
+            <button type="button" id="themeModeController">Dark Mode</button>
+            <div class="dropdown">
+                <button type="button" id="languageController" class="dropdown-btn" data-target="languageList">Language
+                    EN</button>
+
+                <ul class="dropdown-list" id="languageList">
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('en')"
+                            type="button">English</button></li>
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('tr')" type="button">Türkçe</button>
+                    </li>
+                    <li><button class="dropdown-list-item1" onclick="changeLanguage('de')"
+                            type="button">Deutsche</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <video loop muted autoplay disablePictureInPicture
+        src="https://cdn.discordapp.com/attachments/1175449786565009490/1176079268883730462/mclaren.mp4"></video>
+    <main>
+        <section class="user-action container">
+            <div class="user-wrapper">
+                <!-- todo Login Form -->
+                <form action="#" id="login" class="form form-login show">
+                    <h1 id="login_head" class="text-white"><span>Log In</span></h1>
+                    <div class="form-el">
+                        <input type="text" name="login_email" id="login_email" placeholder="E-Mail">
+                    </div>
+                    <div class="form-el">
+                        <input type="password" name="login_password" id="login_password" placeholder="Password">
+                    </div>
+                    <div class="form-el">
+                        <label>
+                            <input type="checkbox" name="login_remember" id="login_remember">
+                            <span class="text-white"> Remember Me</span>
+                        </label>
+                    </div>
+                    <div class="form-el">
+                        <a href="#" id="login_forgot_password">
+                            <span>Forgot Password?</span>
+                        </a>
+                        <button type="submit" id="login_button"><span>Log In</span></button>
+                    </div>
+                    <div class="form-el text-center">
+                        <button type="button" id="login_member_yet" onclick="changeForm('register')" class="text-underline text-white">
+                            <span>Not a member yet?</span>
+                        </button>
+                    </div>
+                </form>
+                <!-- todo Register Form -->
+                <form action="#" id="register" class="form form-register">
+                    <h1 class="text-white">Sign Up</h1>
+                    <div class="form-el">
+                        <input type="text" placeholder="Name and Surname">
+                    </div>
+                    <div class="form-el">
+                        <input type="text" placeholder="E-Mail">
+                    </div>
+                    <div class="form-el">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="form-el">
+                        <input type="password" placeholder="Repeat Password">
+                    </div>
+                    <div class="form-el">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                    <div class="form-el text-center">
+                        <button type="button" onclick="changeForm('login')" class="text-underline text-white">
+                            <span>Already a member?</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section id="loader" class="show">
+        <div class="spinner"></div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script>
+        function changeForm(target) {
+            switch (target) {
+                case 'login':
+                    document.getElementById("register").classList.remove("show");
+                    document.getElementById("login").classList.add("show");
+                    break;
+                default:
+                    document.getElementById("login").classList.remove("show");
+                    document.getElementById("register").classList.add("show");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

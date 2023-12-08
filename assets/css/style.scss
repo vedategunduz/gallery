@@ -1,0 +1,20 @@
+@import "../sass/variables";
+@import "../sass/reboot";
+@import "../sass/responsive";
+@import "../sass/nav";
+@import "../sass/modal";
+@import "../sass/loader";
+@import "../sass/register";
+
+main#main {
+    padding: $content-padding;
+}
+
+body {
+    &.dark-mode {
+        background-color: $dark-mode-body;
+    }
+    &:not(.dark-mode) {
+        background-color: $light-mode-body;
+    }
+}
