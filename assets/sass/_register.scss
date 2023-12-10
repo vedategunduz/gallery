@@ -36,10 +36,11 @@ video {
                 margin-bottom: 1rem;
 
                 &:last-child {
-                    margin-bottom: 0rem!important;
+                    margin-bottom: 0rem !important;
                 }
 
-                input[type="text"], input[type="password"] {
+                input[type="text"],
+                input[type="password"] {
                     display: block;
                     border-radius: 0;
                     border: 0;
@@ -63,12 +64,12 @@ video {
                 padding: .75rem 2rem;
                 font-weight: bold;
                 text-transform: uppercase;
-                background-color: black;
+                background-color: #e74c3c;
                 color: white;
                 transition: .4s;
 
                 &:hover {
-                    background-color: rgba(black, .5);
+                    opacity: .8;
                 }
             }
         }

@@ -5,11 +5,18 @@ $content-padding-left-right: 10vw;
 $content-padding: $content-padding-top-bottom $content-padding-left-right;
 // ? Colors
 // * Dark Mode Theme Colors
-$dark-mode-body: #333;
-$dark-mode-text-color: #fff;
+
+$dark-mode-body: #1a1a1a;
+$dark-mode-text-color: #bdc3c7;
+$dark-mode-header-controller: #121212;
+$dark-mode-header-nav: #121212;
+$dark-mode-footer: #2c3e50;
 // * Light Mode Theme Colors
-$light-mode-body: #fff;
-$light-mode-text-color: #333;
+$light-mode-body: #ecf0f1;
+$light-mode-text-color: #34495e;
+$light-mode-header-controller: #2c3e50;
+$light-mode-header-nav: #2c3e50;
+$light-mode-footer: #f39c12;
 // * Text Colors
 $colors: (
     "blue": #0d6efd,
@@ -19,7 +26,7 @@ $colors: (
     "red": #dc3545,
     "orange": #fd7e14,
     "yellow": #ffc107,
-    "green": #198754,
+    "green": #4CAF50,
     "teal": #20c997,
     "cyan": #0dcaf0,
     "white": #ffffff,

@@ -12,8 +12,8 @@
             left: 0;
             width: 80vw;
             z-index: 3;
-            background-color: transparent;
-            backdrop-filter: blur(.75rem);
+            background-color: transparent !important;
+            backdrop-filter: blur(.75rem) !important;
             border-bottom: 1px solid rgba(255, 255, 255, .1);
         }
 
@@ -33,7 +33,7 @@
         McLaren
         https://cdn.discordapp.com/attachments/1175449786565009490/1176079268883730462/mclaren.mp4
     -->
-
+    <div id="pageRegister"></div>
     <header>
         <div class="controller">
             <button type="button" id="themeModeController">Dark Mode</button>
@@ -70,7 +70,7 @@
                     <div class="form-el">
                         <label>
                             <input type="checkbox" name="login_remember" id="login_remember">
-                            <span class="text-white"> Remember Me</span>
+                            <span id="login_remember_text" class="text-white"> Remember Me</span>
                         </label>
                     </div>
                     <div class="form-el">
@@ -87,24 +87,24 @@
                 </form>
                 <!-- todo Register Form -->
                 <form action="#" id="register" class="form form-register">
-                    <h1 class="text-white">Sign Up</h1>
+                    <h1 class="text-white" id="sign_up_head">Sign Up</h1>
                     <div class="form-el">
-                        <input type="text" placeholder="Name and Surname">
+                        <input type="text" id="sign_up_username" placeholder="Name and Surname">
                     </div>
                     <div class="form-el">
-                        <input type="text" placeholder="E-Mail">
+                        <input type="text" id="sign_up_email" placeholder="E-Mail">
                     </div>
                     <div class="form-el">
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="sign_up_password" placeholder="Password">
                     </div>
                     <div class="form-el">
-                        <input type="password" placeholder="Repeat Password">
+                        <input type="password" id="sign_up_repeat_password" placeholder="Repeat Password">
                     </div>
                     <div class="form-el">
-                        <button type="submit">Sign Up</button>
+                        <button type="submit" id="sign_up_button">Sign Up</button>
                     </div>
                     <div class="form-el text-center">
-                        <button type="button" onclick="changeForm('login')" class="text-underline text-white">
+                        <button type="button" id="sign_up_already_a_member" onclick="changeForm('login')" class="text-underline text-white">
                             <span>Already a member?</span>
                         </button>
                     </div>
