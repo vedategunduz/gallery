@@ -141,9 +141,8 @@ h6 {
   position: relative;
 }
 .dropdown-list {
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 0;
   z-index: 2;
-  margin-top: 0.5rem;
   position: absolute;
   overflow: auto;
   background-color: white;
@@ -153,8 +152,15 @@ h6 {
 .dropdown-list li {
   padding: 0 1rem;
 }
+.dropdown-list li button {
+  padding: 0.25rem;
+  color: #34495e !important;
+}
 .dropdown-list li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-list li:hover {
+  background-color: #ecf0f1;
 }
 .dropdown-list:not(.show) {
   display: none;
@@ -243,7 +249,7 @@ header .controller {
   align-items: center;
   justify-content: space-between;
 }
-header .controller button {
+header .controller > button {
   padding: 0.5rem 0;
 }
 header .nav {
@@ -405,7 +411,7 @@ video {
 }
 .container .user-wrapper {
   position: absolute;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 3rem;
   top: 50%;
   left: 50%;
   border-radius: 0.25rem;
@@ -417,6 +423,18 @@ video {
 }
 .container .user-wrapper .form-login {
   display: none;
+}
+.container .user-wrapper #goToIndex {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  transition: 0.4s;
+}
+.container .user-wrapper #goToIndex:hover {
+  opacity: 0.8;
 }
 .container .user-wrapper form.form:not(.show) {
   display: none;
@@ -493,6 +511,10 @@ body:not(.dark-mode) header .controller {
 }
 body:not(.dark-mode) header nav {
   background-color: #2c3e50;
+}
+body:not(.dark-mode) header nav .nav-logo,
+body:not(.dark-mode) header nav .nav-mobile-logo {
+  color: #ecf0f1;
 }
 body:not(.dark-mode) header nav ul li a,
 body:not(.dark-mode) header nav ul li button {

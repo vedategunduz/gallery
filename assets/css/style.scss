@@ -11,6 +11,7 @@ main#main {
 }
 
 body {
+
     // dark mode
     &.dark-mode {
         background-color: $dark-mode-body;
@@ -42,6 +43,7 @@ body {
             background-color: $dark-mode-footer;
         }
     }
+
     // light mode
     &:not(.dark-mode) {
         background-color: $light-mode-body;
@@ -54,6 +56,11 @@ body {
 
             nav {
                 background-color: $light-mode-header-nav;
+
+                .nav-logo,
+                .nav-mobile-logo {
+                    color: $light-mode-body;
+                }
 
                 ul li {
 
